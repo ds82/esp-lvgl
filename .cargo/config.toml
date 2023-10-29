@@ -62,3 +62,10 @@ ESP_IDF_VERSION = "v5.1.1"
 # is by running "cargo pio espidf menuconfig" (that is, if using the pio builder)
 #ESP_IDF_SDKCONFIG = "sdkconfig.release;sdkconfig.debug"
 ESP_IDF_SDKCONFIG_DEFAULTS = "sdkconfig.defaults;sdkconfig.defaults.esp32;sdkconfig.defaults.esp32s2"
+
+DEP_LV_CONFIG_PATH = { relative = true, value = "." }
+LVGL_INCLUDE = "/opt/homebrew/include"
+
+# echo "LVGL_INCLUDE=\"$(find ~/.rustup/toolchains/esp/xtensa-esp32-elf -name include -type d | tr '\n' ':' | sed -r 's/:$//')\""
+# C_INCLUDE_PATH="/Users/dennis/code/rust/esp-lvgl/.embuild/espressif/esp-idf/v5.1.1/components/freertos/FreeRTOS-Kernel/include:/Users/dennis/code/rust/esp-lvgl/.embuild/espressif/esp-idf/v5.1.1/components/mbedtls/mbedtls/library:/Users/dennis/code/rust/esp-lvgl/.embuild//espressif/esp-idf/v5.1.1/components/freertos/esp_additions/include/freertos:/Users/dennis/code/rust/esp-lvgl/.embuild/espressif/esp-idf/v5.1.1/components/mbedtls/mbedtls/include:/Users/dennis/code/rust/esp-lvgl/.embuild//espressif/esp-idf/v5.1.1/components/esp_common/include"
+
